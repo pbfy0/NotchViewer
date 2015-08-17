@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         NotchViewer
 // @namespace    http://pbfy0.com/
-// @version      1.20
+// @version      1.21
 // @description  Show notches on the brawlhalla ranked page
 // @author       pbfy0
 // @match        *://*.brawlhalla.com/rankings/*
