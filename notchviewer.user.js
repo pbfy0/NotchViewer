@@ -38,37 +38,47 @@ function dom_for_notches(n){
 }
 
 function elo2notch(elo, tier){
-	if(elo > 2000) return 0x50;
-	if(elo > 1936) return 0x45;
-	if(elo > 1872) return 0x44;
-	if(elo > 1808) return 0x43;
-	if(elo > 1744) return 0x42;
-	if(elo > 1680) return 0x41;
-	if(elo >= 1632 && tier == "platinum") return 0x40;
-	if(elo > 1632) return 0x35;
-	if(elo > 1584) return 0x34;
-	if(elo > 1536) return 0x33;
-	if(elo > 1488) return 0x32;
-	if(elo > 1440) return 0x31;
-	if(elo >= 1408 && tier == "gold") return 0x30;
-	if(elo > 1408) return 0x25;
-	if(elo > 1376) return 0x24;
-	if(elo > 1344) return 0x23;
-	if(elo > 1312) return 0x22;
-	if(elo > 1280) return 0x21;
-	if(elo >= 1232 && tier == "silver") return 0x20;
-	if(elo > 1232) return 0x15;
-	if(elo > 1184) return 0x14;
-	if(elo > 1136) return 0x13;
-	if(elo > 1088) return 0x12;
-	if(elo > 1040) return 0x11;
-	if(elo >= 976 && tier == "bronze") return 0x10;
-	if(elo > 976) return 0x05;
-	if(elo > 912) return 0x04;
-	if(elo > 848) return 0x03;
-	if(elo > 784) return 0x02;
-	if(elo > 720) return 0x01;
-	if(elo >= 200 && tier == "tin") return 0x00;
+	if(elo >= 2000) return 0x50;
+	if(tier == "platinum"){
+		if(elo >= 1936) return 0x45;
+		if(elo >= 1872) return 0x44;
+		if(elo >= 1808) return 0x43;
+		if(elo >= 1744) return 0x42;
+		if(elo >= 1680) return 0x41;
+		if(elo >= 1632) return 0x40;
+	}
+	if(tier == "gold"){
+		if(elo >= 1632) return 0x35;
+		if(elo >= 1584) return 0x34;
+		if(elo >= 1536) return 0x33;
+		if(elo >= 1488) return 0x32;
+		if(elo >= 1440) return 0x31;
+		if(elo >= 1408) return 0x30;
+	}
+	if(tier == "silver"){
+		if(elo >= 1408) return 0x25;
+		if(elo >= 1376) return 0x24;
+		if(elo >= 1344) return 0x23;
+		if(elo >= 1312) return 0x22;
+		if(elo >= 1280) return 0x21;
+		if(elo >= 1232) return 0x20;
+	}
+	if(tier == "bronze"){
+		if(elo >= 1232) return 0x15;
+		if(elo >= 1184) return 0x14;
+		if(elo >= 1136) return 0x13;
+		if(elo >= 1088) return 0x12;
+		if(elo >= 1040) return 0x11;
+		if(elo >= 976) return 0x10;
+	}
+	if(tier == "tin"){
+		if(elo >= 976) return 0x05;
+		if(elo >= 912) return 0x04;
+		if(elo >= 848) return 0x03;
+		if(elo >= 784) return 0x02;
+		if(elo >= 720) return 0x01;
+		if(elo >= 200) return 0x00;
+	}
 }
 
 var x = Array.prototype.slice.call(document.getElementsByTagName("tr"));
