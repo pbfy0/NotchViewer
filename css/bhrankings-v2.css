@@ -1,0 +1,21 @@
+@charset "utf-8";
+body { color: #FFF; font-weight: bold; background: url("//pbfy0.github.io/NotchViewer/img/rankgrad.png") repeat-y; background-position: center; background-color: #000; }
+td, tr { height: 26px; }
+a { color: #FFF; text-decoration: none; }
+a:hover { color: #5FF; text-decoration: none; }
+#bg { background: url("//pbfy0.github.io/NotchViewer/img/bhbetabg.png") no-repeat scroll 50% 0px transparent; min-height:770px; }
+#header { width: 1000px; height: 199px; text-align: left; margin: 0px auto; }
+#content { margin: 0px auto; width: 976px; min-height: 100%; padding-left: 12px; padding-right: 12px; margin: 0px auto; clear: left; }
+.odd { background-color: #181818; background-color: rgb(24, 24, 24); background-color: rgba(24, 24, 24, 0.95); }
+.even { background-color: #292929; background-color: rgb(41, 41, 41); background-color: rgba(41, 41, 41, 0.95); }
+.leftpadding { padding-left:10px; }
+.rightcell{ padding-right: 6px; text-align:right; }
+.pnameleft { text-align: left; padding-left: 2px; }
+.pcenter { text-align: center; }
+.bhicon { width: 29px; height: 20px; float: left; background: url("//pbfy0.github.io/NotchViewer/img/rankicons.png") no-repeat scroll 0% 0% transparent; }
+.stardiamond { background-position: -29px 0px; }
+.starplatinum { background-position: -87px 0px; }
+.stargold { background-position: -58px 0px; }
+.starsilver { background-position:  -116px 0px; }
+.starbronze { background-position: 0px 0px; }
+.startin { background-position: -145px 0px; }
