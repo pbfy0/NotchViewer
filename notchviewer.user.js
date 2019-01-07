@@ -85,11 +85,12 @@ var x = Array.prototype.slice.call(document.getElementsByTagName("tr"));
 for(var i = 0; i < x.length; i++){
 	var y = x[i];
 	if(y.id == "rheader") continue;
-	var tier = y.children[3].children[0].classList[1].substr(4);
+	var stars = y.getElementsByClassName('stars')[0];
+	var tier = stars.children[0].classList[1].substr(4);
 	if(tier == "diamond") continue;
-	var elo = parseInt(y.children[5].textContent, 10);
+	var elo = parseInt(y.children[6].textContent, 10);
 	var notches = elo2notch(elo, tier) & 0xf;
-	y.children[3].appendChild(dom_for_notches(notches));
+	stars.appendChild(dom_for_notches(notches));
 }
 
 document.head.appendChild(o(document.createElement("style"), {innerHTML: css}));
